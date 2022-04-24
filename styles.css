@@ -1,0 +1,166 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans', sans-serif;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+:root {
+    --purple: rgb(46, 19, 58);
+}
+
+.navbar {
+    padding: 10px 15%;
+    height: 60px;
+    background-color: white;
+}
+
+.navbar-brand {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+.nav-item {
+    padding: 0px 15px;
+    border-right: 1px solid var(--purple);
+}
+
+.nav-item:nth-child(4) {
+    border-right: none;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
+
+#home {
+    height: calc(80vh - 60px);
+    width: 100vw;
+}
+
+#home h1,
+#home p {
+    width: 400px;
+}
+
+#home h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+    color: black;
+}
+
+#home p {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.header-style {
+    color: #FFa500;
+}
+
+.contact-btn {
+    display: block;
+    width: fit-content;
+    text-align: left;
+    padding: 5px 7px;
+    margin-top: 10px;
+    color: white;
+    background-color: #552586;
+    border-radius: 4px;
+    border: 1px solid #552586;
+}
+
+.contact-btn:hover {
+    color: #552586;
+    border: 1px solid #552586;
+    background-color: white;
+}
+
+.section-header {
+    border-bottom: 1px solid rgb(204, 202, 202);
+    padding: 10px 40px;
+    position: relative;
+    font-family: 'jost', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.section-header::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    height: 3px;
+    width: 70px;
+    left: calc(50% - 35px);
+    background-color: #FFa500;
+}
+
+#services {
+    background-color: #F3F5FA;
+    padding: 10px 60px;
+}
+
+.about-content {
+    line-height: 2;
+}
+
+.about-quote {
+    border: solid 1px #e8e8e8;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    padding: 20px 40px;
+    line-height: 1.5;
+}
+
+.about-quote i {
+    color: #552586;
+}
+
+.about-quote p {
+    color: #552586;
+    font-weight: bold;
+}
+
+.services-row h1 {
+    font-size: 22px;
+    font-family: 'jost', sans-serif;
+    font-weight: 700;
+}
+
+.services-box {
+    box-shadow: 0 0 25px 0 rgb(0 0 0 / 10%);
+    padding: 50px 30px;
+    transition: all ease-in-out 0.4s;
+    position: relative;
+}
+
+.services-box:hover {
+    transform: scale(1.03);
+}
+
+.service-class {
+    font-size: 22px;
+}
+
+
+/* Purple rgb(46,19,58)
+
+ orange rgb(248,220,139)
+
+
+ other colors rgb(254,137,121)
+ rgb(163,116,243)
+*/
