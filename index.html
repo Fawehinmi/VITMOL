@@ -1,87 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vitmol</title>
-    <link rel="shortcut icon" href="20220421_210629.png" type="image/x-icon">
+    <link rel="shortcut icon" href="20220421_210629.png" type="image/x-icon" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://use.fontawesome.com/bb4f9ef701.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Open+Sans:wght@300&family=Poiret+One&family=Raleway:wght@100&family=Roboto+Mono:wght@100&family=Source+Sans+Pro:wght@300&family=Vidaloka&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Open+Sans:wght@300&family=Poiret+One&family=Raleway:wght@100&family=Roboto+Mono:wght@100&family=Source+Sans+Pro:wght@300&family=Vidaloka&display=swap"
+      rel="stylesheet"
+    />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-
-<body>
-
-    <nav class="navbar navbar-expand-md navbar-light sticky-top">
-        <a class="navbar-brand" href="#">VITMOL  <img src="20220421_210629.png" class="logo" alt=""></a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-0 mb-2 mb-lg-0">
-                <li class="nav-item d-flex align-items-center">
-                    <i class="fa fa-home" aria-hidden="true"></i>
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item d-flex align-items-center">
-                    <i class="fa fa-user-o" aria-hidden="true"></i>
-                    <a class="nav-link" href="#">Training</a>
-                </li>
-                <li class="nav-item d-flex align-items-center">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    <a class="nav-link" href="#">Research</a>
-                </li>
-                <li class="nav-item d-flex align-items-center">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div id="home">
-        <div class="container h-100">
-            <div class="row h-100">
-                <div class="col-md-6 d-flex flex-column h-100 justify-content-center">
-                    <h1>Geonomic <span class="header-style">&</span> Bioinformatics services</h1>
-                    <p>Vitmol offers a wide range of Geonomic and Bioinformatic services in the fields of human, animal or plant biology</p>
-                    <button class="contact-btn">Contact Us</button>
-                </div>
-            </div>
-        </div>
+  <body>
+    <div class="up hidden">
+      <a href="#nav" class="go-up"
+        ><i class="fa fa-arrow-up" aria-hidden="true"></i
+      ></a>
     </div>
 
+    <nav class="navbar navbar-expand navbar-light" id="nav">
+      <a class="navbar-brand" href="#"
+        ><img src="20220421_210629.png" class="logo me-3" alt="" />VITMOL
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarTogglerDemo02"
+      >
+        <ul class="navbar-nav me-0 mb-2 mb-lg-0">
+          <li class="nav-item d-flex align-items-center">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <i class="fa fa-user-o" aria-hidden="true"></i>
+            <a class="nav-link" href="#training">Training</a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="home" class="flex align-items-center justify-content-center py-2">
+      <div class="container h-100">
+        <div
+          class="row h-100 flex justify-content-center align-items-md-center"
+        >
+          <div
+            class="col-md-5 d-flex flex-column h-md-100 h-sm-40 justify-content-center"
+          >
+            <h1>
+              Geonomic <span class="header-style">&</span> Bioinformatics
+              services
+            </h1>
+            <p>
+              Vitmol offers a wide range of Geonomic and Bioinformatic services
+              in the fields of human, animal or plant biology
+            </p>
+            <button class="contact-btn text-sm-center">Contact Us</button>
+          </div>
+          <div class="col-md-7 h-md-100 h-sm-40">
+            <img src="pexels-kampus-production-5940841.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div id="About" class="container">
+      <div class="d-flex justify-content-center">
+        <h1 class="section-header">ABOUT US</h1>
+      </div>
 
-        <div class="d-flex justify-content-center">
-            <h1 class="section-header">ABOUT US</h1>
+      <div class="row about-content my-3 align-items-center">
+        <div
+          class="col-md-6"
+          data-aos="fade-right"
+          data-aos-once="true"
+          data-aos-duration="1000"
+        >
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            cumque distinctio enim dolores ipsam blanditiis, quo quod
+            voluptatem. Inventore fugiat deleniti dolorem odio nostrum ipsam
+            quae aliquam asperiores voluptas quidem?
+          </p>
         </div>
-
-        <div class="row about-content my-3 align-items-center">
-            <div class="col-md-6" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cumque distinctio enim dolores ipsam blanditiis, quo quod voluptatem. Inventore fugiat deleniti dolorem odio nostrum ipsam quae aliquam asperiores voluptas quidem?</p>
-            </div>
-            <div class="col-md-6 about-quote text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000">
-                <i class="fa fa-quote-left mb-2" aria-hidden="true"></i>
-                <br>
-                <em>When you think about it, caring for patients is 99 percent information and 1 percent intervention, so it's clear that Bioinformatics brings a cutting edge capacity to Healthcare.</em>
-                <p class="my-3">CHRISTOPHER G. CHUTE</p>
-            </div>
+        <div
+          class="col-md-6 about-quote text-center"
+          data-aos="zoom-in"
+          data-aos-once="true"
+          data-aos-duration="1000"
+        >
+          <i class="fa fa-quote-left mb-2" aria-hidden="true"></i>
+          <br />
+          <em
+            >When you think about it, caring for patients is 99 percent
+            information and 1 percent intervention, so it's clear that
+            Bioinformatics brings a cutting edge capacity to Healthcare.</em
+          >
+          <p class="my-3">CHRISTOPHER G. CHUTE</p>
         </div>
+      </div>
 
-
-        <!-- 
+      <!-- 
             Carousel contaning the three research services
 
             1. Target discovery
@@ -91,107 +143,310 @@
     </div>
 
     <div id="services">
-        <div class="container">
-            <div class="d-flex justify-content-center">
-                <h1 class="section-header">SERVICES</h1>
-            </div>
-            <p class="text-center">Our Services at VITMOL includes</p>
-
-
-            <div class="row services-row">
-                <div class="col-12">
-                    <h1 class="service-class pb-2">DRUG DEVELOPMENT, DESIGN AND DISCOVERY (4D™)</h1>
-                </div>
-                <div class="col-md-4 my-3">
-                    <div class="bg-white text-center services-box" data-aos="zoom-in" data-aos-duration="2000">
-                        <h1 class="">Target Discovery</h1>
-                        <p class="pt-2">We help you to identify and validate the most significant targets using expression data (public or user provided) and also predict the ‘best-in-class’ targets as curated from existing literatures
-                        </p>
-                        <p>Application: Target based Drug discovery, polypharmacology
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 my-3">
-                    <div class="bg-white text-center  services-box" data-aos="zoom-in" data-aos-duration="2000">
-                        <h1 class="">Structure Based drug discovery</h1>
-                        <p class="pt-2">Screen as much as possible putative ligands from our database of over 50,000 drug-like compounds. Predict and describe the best drug binding site, Predict receptor-ligand molecule interaction for drug design.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 my-3">
-                    <div class="bg-white text-center  services-box" data-aos="zoom-in" data-aos-duration="2000">
-                        <h1 class="">Ligand Based drug Discovery</h1>
-                        <p class="pt-2">Mathematically model ligand bioactivity and contributing factors using cheminformatics tools
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row services-row justify-content-center">
-                <div class="col-12">
-                    <h1 class="service-class py-2">DATABASE MANAGEMENT (DATMAN™)</h1>
-                </div>
-                <div class="col-md-4 my-3">
-                    <div class="bg-white text-center services-box" data-aos="zoom-in" data-aos-duration="2000">
-                        <h1 class="">Target Discovery</h1>
-                        <p class="pt-2">We help you to identify and validate the most significant targets using expression data (public or user provided) and also predict the ‘best-in-class’ targets as curated from existing literatures
-                        </p>
-                        <p>Application: Target based Drug discovery, polypharmacology
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 my-3">
-                    <div class="bg-white text-center  services-box" data-aos="zoom-in" data-aos-duration="2000">
-                        <h1 class="">Structure Based drug discovery</h1>
-                        <p class="pt-2">Screen as much as possible putative ligands from our database of over 50,000 drug-like compounds. Predict and describe the best drug binding site, Predict receptor-ligand molecule interaction for drug design.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 my-3">
-                    <div class="bg-white text-center  services-box" data-aos="zoom-in" data-aos-duration="2000">
-                        <h1 class="">Ligand Based drug Discovery</h1>
-                        <p class="pt-2">Mathematically model ligand bioactivity and contributing factors using cheminformatics tools
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 my-3">
-                    <div class="bg-white text-center  services-box" data-aos="zoom-in" data-aos-duration="2000">
-                        <h1 class="">Structure Based drug discovery</h1>
-                        <p class="pt-2">Screen as much as possible putative ligands from our database of over 50,000 drug-like compounds. Predict and describe the best drug binding site, Predict receptor-ligand molecule interaction for drug design.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 my-3">
-                    <div class="bg-white text-center  services-box" data-aos="zoom-in" data-aos-duration="2000">
-                        <h1 class="">Ligand Based drug Discovery</h1>
-                        <p class="pt-2">Mathematically model ligand bioactivity and contributing factors using cheminformatics tools
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row services-row justify-content-center">
-                <div class="col-12">
-                    <h1 class="service-class py-2 text-center">HUMAN AND MICROBIAL GENOMICS (HMG ™)</h1>
-                </div>
-                <div class="col-md-4 my-3">
-                    <div class="bg-white text-center services-box" data-aos="zoom-in" data-aos-duration="2000">
-                        <h1 class="">Target Discovery</h1>
-                        <p class="pt-2">We help you to identify and validate the most significant targets using expression data (public or user provided) and also predict the ‘best-in-class’ targets as curated from existing literatures
-                        </p>
-                        <p>Application: Target based Drug discovery, polypharmacology
-                        </p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div
+          class="d-flex justify-content-center"
+          data-aos="zoom-in-right"
+          data-aos-once="true"
+          data-aos-duration="1000"
+        >
+          <h1 class="section-header">SERVICES</h1>
         </div>
+        <p
+          class="text-center"
+          data-aos="zoom-in-right"
+          data-aos-once="true"
+          data-aos-duration="1000"
+        >
+          Our Services at VITMOL includes
+        </p>
+
+        <div class="row services-row">
+          <div class="col-12">
+            <h1 class="service-class pb-2">
+              DRUG DEVELOPMENT, DESIGN AND DISCOVERY (4D™)
+            </h1>
+          </div>
+          <div class="col-md-4 my-2">
+            <div
+              class="bg-white services-box-lg"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            >
+              <h1 class="text-center">Target Discovery</h1>
+              <p class="pt-2">
+                We help you to identify and validate the most significant
+                targets using expression data (public or user provided) and also
+                predict the ‘best-in-class’ targets as curated from existing
+                literatures
+              </p>
+              <p>
+                <strong>Application:</strong> Target based Drug discovery,
+                polypharmacology
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 my-2">
+            <div
+              class="bg-white services-box-lg"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            >
+              <h1 class="text-center">Structure Based drug discovery</h1>
+              <p class="pt-2">
+                Screen as much as possible putative ligands from our database of
+                over 50,000 drug-like compounds. <br />
+                Predict and describe the best drug binding site.. <br />
+                Predict receptor-ligand molecule interaction for drug design.
+              </p>
+              <p class="">
+                <strong>Application:</strong> Drug discovery and optimization,
+                Drug repurposing
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 my-2">
+            <div
+              class="bg-white services-box-lg"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            >
+              <h1 class="text-center">Ligand Based drug Discovery</h1>
+              <p class="pt-2">
+                Mathematically model ligand bioactivity and contributing factors
+                using cheminformatics tools. <br />Detection and Mapping of the
+                core electronics and physicochemical properties associated with
+                the bioactivity of a group of related ligands.
+              </p>
+              <p class="">
+                <strong>Application:</strong> Lead optimization, scaffold
+                identification and generation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row services-row justify-content-center">
+          <div class="col-12">
+            <h1 class="service-class py-2">DATABASE MANAGEMENT (DATMAN™)</h1>
+          </div>
+          <div class="col-md-4 my-2">
+            <div
+              class="bg-white services-box"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            >
+              <h1 class="text-center">Phytochemical Database Generation</h1>
+              <p class="pt-2">
+                We develop user friendly databases for your plant selection.
+                Request for our herbarium to see our plant collection. If your
+                plant is not present, we can help you build your database upon
+                request.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 my-2">
+            <div
+              class="bg-white services-box"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            >
+              <h1 class="text-center">Target specific Inhibitors</h1>
+              <p class="pt-2">
+                Request for a collection of ligands in their 1,2&3-D
+                configurations of special targets. (Special targets include:
+                kinase, GPCR)
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 my-2">
+            <div
+              class="bg-white services-box"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            >
+              <h1 class="text-center">Drug Repurposing study</h1>
+              <p class="pt-2">
+                Do you have a lead concerning the repurposing of a particular
+                group of molecules towards another target? We can help you to
+                develop your database
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 my-2">
+            <div
+              class="bg-white services-box"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            >
+              <h1 class="text-center">Decoy Databases</h1>
+              <p class="pt-2">
+                We can help you create Decoy Databases. Decoys are best likened
+                to negative controls in wet lab experiments. They are useful in
+                the final validation of your molecular docking experiments.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 my-2">
+            <div
+              class="bg-white services-box"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            >
+              <h1 class="text-center">Complete Pipeline Resource</h1>
+              <p class="pt-2">
+                Want a complete bioinformatics resource set for a particular
+                disease? From gene sequences to protein and ligands, we can
+                build it for you in the most easily accessible mode.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row services-row justify-content-center">
+          <div class="col-12">
+            <h1 class="service-class py-2 text-center">
+              DATA AND IMAGE ANALYSIS (DIANA)
+            </h1>
+          </div>
+          <div class="col-md-4 my-2">
+            <div
+              class="bg-white services-box-lg"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            >
+              <h1 class="text-center">Biostatistical analysis</h1>
+              <p class="pt-2">
+                Correlation (Spearman and Pearson Regression (MLR, PCA, PLS-R,
+                PCR,SVM-R) p-value analysis dose response curves (IC50, EC50,
+                SUV) 1/2/3 way ANOVA, t-test, chi-test, F-test Determination of
+                Area Under Curve (AUC) Factor Analysis Clustering (hierarchical,
+                k-mean, Euclidean, Manhattan, etc.)
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 my-2">
+            <div
+              class="bg-white services-box-lg"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            >
+              <h1 class="text-center">Image Analysis</h1>
+              <p class="pt-2">
+                Densitometric analysis and ranking (for 2D-gel electrophoresis
+                and blots) <br />
+                PET images Immunohistochemistry <br />
+                Fluorescence <br />
+                microscopy <br />
+                Particle counting
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row services-row justify-content-center">
+          <div class="col-12">
+            <h1 class="service-class py-2 text-center">
+              HUMAN AND MICROBIAL GENOMICS (HMG ™)
+            </h1>
+          </div>
+          <div class="col-md-4 my-2">
+            <div
+              class="bg-white services-box-lg"
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            >
+              <h1 class="text-center">Genomics</h1>
+              <p class="pt-2">
+                We help you to identify and validate the most significant
+                targets using expression data (public or user provided) and also
+                predict the ‘best-in-class’ targets as curated from existing
+                literatures
+              </p>
+              <p>Application: Target based Drug discovery, polypharmacology</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <div id="training">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <h1 class="section-header">TRAINING</h1>
+        </div>
 
+        <div class="row">
+          <div class="col-md-6 flex">
+            <div></div>
+            <div>
+              <h3>Special Software Training(SPESOT)</h3>
+              <p>
+                Learn on how to use one or more of the top bioinformatics
+                software used in the pharmaceutical industry. <br />
+                Currently, we have over 30 licensed and open software,
+                extensions, widgets, consoles and scripts in our library. We
+                have well designed modules delivered by expert on how to
+                install, operate and/or use them
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 flex">
+            <div></div>
+            <div>
+              <h3>SPECIAL PIPELINE TRAINING (SPIT)</h3>
+              <p>
+                Learn from start to finish, the basics of any of our pipelines.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="container">
+      <div class="row justify-content-between">
+        <div class="col-4">
+          <h3>VITMOL</h3>
+          <p>Phone :</p>
+          <p>Email :</p>
+        </div>
+        <div class="col-4">
+          <h6>Our Services</h6>
+          <p>Drug Development and Discovery</p>
+          <p>Database Management</p>
+          <p>Data and image analysis</p>
+          <p>Human and Microbial Genonomics</p>
+          <p>Bio-Informatic Training</p>
+        </div>
+        <div class="col-4">
+          <h6>Our social networks</h6>
+          <p>
+            You can follow and contact us through any of our social pages below
+          </p>
+          <div class="flex">
+            <a href="">Twitter</a>
+            <a href="">Instagram</a>
+            <a href="">Linkedln</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="row p-4">
+        <div class="col-6">© Copyright VITMOL. All Rights Reserved</div>
+        <div class="col-6">Built by Fawehinmi Emmanuel</div>
+      </div>
+    </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
