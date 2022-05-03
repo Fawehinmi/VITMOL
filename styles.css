@@ -29,7 +29,7 @@ footer :nth-child(1) {
   bottom: 20px;
   right: 20px;
   border-radius: 100%;
-  z-index: 100;
+  z-index: 200;
 }
 
 .fa-arrow-up {
@@ -97,23 +97,6 @@ footer :nth-child(1) {
 .header-style {
   color: #ffa500;
 }
-
-.contact-btn {
-  display: block;
-  width: fit-content;
-  text-align: left;
-  padding: 5px 10px;
-  margin-top: 10px;
-  color: white;
-  background-color: #552586;
-  border-radius: 30px;
-  border: 1px solid #552586;
-}
-
-.contact-btn:hover {
-  background-color: #7749a5;
-}
-
 .section-header {
   border-bottom: 1px solid rgb(204, 202, 202);
   padding: 10px 40px;
@@ -190,12 +173,34 @@ footer :nth-child(1) {
 }
 
 @media only screen and (max-width: 767px) {
+  p {
+    font-size: 16px !important;
+  }
+  #home {
+    height: 65vh;
+  }
   .navbar {
     font-size: 14px;
-    padding: 0px;
+    padding: 0px 8px;
   }
   .nav-item {
     padding: 0px 5px;
     border: none;
+  }
+  .navbar-nav {
+    display: none;
+  }
+  #home h1,
+  #home p {
+    width: auto;
+  }
+  #home img {
+    height: 100%;
+  }
+  #services {
+    padding: 10px 5px;
+  }
+  .section-header {
+    font-size: 20px;
   }
 }
