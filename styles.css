@@ -14,6 +14,9 @@ footer {
   background-color: #4a1e75;
   color: white;
 }
+.none {
+  display: none;
+}
 
 :root {
   --purple: rgb(46, 19, 58);
@@ -47,6 +50,10 @@ footer {
   font-weight: 700;
 }
 
+.nav-toggler {
+  display: none;
+}
+
 .logo {
   height: 50px;
   width: 50px;
@@ -54,15 +61,10 @@ footer {
 
 .nav-item {
   padding: 0px 15px;
-  border-right: 1px solid rgba(121, 120, 120, 0.308);
 }
-
-.nav-item:nth-child(4) {
-  border-right: none;
-}
-
 .nav-link {
   text-transform: uppercase;
+  font-weight: 800;
 }
 
 #home {
@@ -72,6 +74,7 @@ footer {
   background: url(pexels-kampus-production-5940841.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .home-overlay {
@@ -100,7 +103,11 @@ h1 {
 .contact-btn {
   color: black;
   background-color: white;
-  padding: 10px 30px;
+  padding: 10px 50px;
+}
+.contact-btn:hover {
+  background-color: rgba(24, 23, 23, 0.925);
+  color: white;
 }
 .header-style {
   color: #ffa500;
@@ -185,6 +192,43 @@ h1 {
 }
 
 @media only screen and (max-width: 767px) {
+  .nav-toggler {
+    position: absolute;
+    display: block;
+    right: 30px;
+    top: 17px;
+    padding: 3px 10px;
+    border: 1px solid grey;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .mobile-nav {
+    position: absolute;
+    height: auto;
+    width: calc(100% - 20px);
+    background-color: white;
+    margin: 0px 10px;
+    border-top: 3px solid #ffa500;
+    padding: 0px;
+  }
+
+  .mobile-nav ul {
+    list-style: none;
+  }
+  .mobile-nav ul li {
+    border-bottom: 1px solid rgb(194, 194, 194);
+    margin-right: 10px;
+    padding: 10px 0px;
+    text-align: center;
+  }
+  .mobile-nav ul li a {
+    text-decoration: none;
+    color: #4a1e75;
+    padding: 10px 0px;
+  }
+  .toggle-icon {
+    font-size: 30px;
+  }
   p {
     font-size: 16px !important;
   }
@@ -214,6 +258,12 @@ h1 {
   }
   #services {
     padding: 10px 5px;
+  }
+  .services-row h1 {
+    font-size: 20px;
+  }
+  .services-box-lg {
+    padding: 20px 30px;
   }
   .section-header {
     font-size: 20px;
