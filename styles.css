@@ -10,8 +10,8 @@ body {
   overflow-x: hidden;
 }
 
-footer :nth-child(1) {
-  background-color: #552586;
+footer {
+  background-color: #4a1e75;
   color: white;
 }
 
@@ -26,8 +26,8 @@ footer :nth-child(1) {
 .up {
   position: fixed;
   background-color: #552586;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 30px;
   border-radius: 100%;
   z-index: 200;
 }
@@ -40,7 +40,6 @@ footer :nth-child(1) {
 .navbar {
   padding: 10px 15%;
   height: 60px;
-  background-color: white;
 }
 
 .navbar-brand {
@@ -67,33 +66,42 @@ footer :nth-child(1) {
 }
 
 #home {
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
+  justify-content: center;
+  background: url(pexels-kampus-production-5940841.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#home h1,
-#home p {
-  width: 400px;
+.home-overlay {
+  background-color: #0c021898;
+  height: 100%;
+  width: 100%;
 }
-
 #home h1 {
+  width: 600px;
+  color: white;
+}
+
+h1 {
   font-family: "Roboto Mono", monospace;
   font-weight: bolder;
   color: black;
 }
 
 #home p {
-  color: black;
+  color: white;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   letter-spacing: 2px;
+  width: 600px;
 }
-
-#home img {
-  height: 70%;
-  width: 100%;
+.contact-btn {
+  color: black;
+  background-color: white;
+  padding: 10px 30px;
 }
-
 .header-style {
   color: #ffa500;
 }
@@ -171,6 +179,10 @@ footer :nth-child(1) {
 .service-class {
   font-size: 22px;
 }
+#contact {
+  background-color: #552586;
+  color: white;
+}
 
 @media only screen and (max-width: 767px) {
   p {
@@ -194,8 +206,11 @@ footer :nth-child(1) {
   #home p {
     width: auto;
   }
-  #home img {
-    height: 100%;
+  #home p {
+    text-align: justify;
+  }
+  .home-overlay {
+    padding: 10px 5%;
   }
   #services {
     padding: 10px 5px;
