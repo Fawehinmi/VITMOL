@@ -283,4 +283,13 @@ h1 {
   .section-header {
     font-size: 20px;
   }
+  .dev-info {
+    font-size: 14px;
+  }
+  .copyright {
+    font-size: 14px !important;
+  }
+  footer {
+    padding: 10px 5%;
+  }
 }
