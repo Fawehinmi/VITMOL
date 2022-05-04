@@ -11,7 +11,17 @@ body {
 }
 
 footer {
-  background-color: #4a1e75;
+  background-color: #1a0530;
+  color: white;
+  padding: 20px 10%;
+}
+.dev-info {
+  text-decoration: none;
+  color: white;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.dev-info:hover {
   color: white;
 }
 .none {
@@ -28,7 +38,7 @@ footer {
 
 .up {
   position: fixed;
-  background-color: #552586;
+  background-color: #1a0530;
   bottom: 30px;
   right: 30px;
   border-radius: 100%;
@@ -106,7 +116,7 @@ h1 {
   padding: 10px 50px;
 }
 .contact-btn:hover {
-  background-color: rgba(24, 23, 23, 0.925);
+  background-color: rgba(0, 0, 0, 0.596);
   color: white;
 }
 .header-style {
@@ -187,8 +197,13 @@ h1 {
   font-size: 22px;
 }
 #contact {
-  background-color: #552586;
+  background-color: #1a0530;
   color: white;
+  padding: 20px 10%;
+}
+#contact a {
+  color: white;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 767px) {
