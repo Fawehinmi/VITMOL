@@ -205,6 +205,9 @@ h1 {
   color: white;
   text-decoration: none;
 }
+#contact h3 {
+  text-transform: uppercase;
+}
 
 @media only screen and (max-width: 767px) {
   .nav-toggler {
@@ -291,5 +294,14 @@ h1 {
   }
   footer {
     padding: 10px 5%;
+  }
+  .services-col {
+    display: none;
+  }
+  #contact h3 {
+    font-size: 15px;
+  }
+  #contact p {
+    font-size: 12px !important;
   }
 }
