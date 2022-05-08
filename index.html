@@ -13,6 +13,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" integrity="sha512-X/RSQYxFb/tvuz6aNRTfKXDnQzmnzoawgEQ4X8nZNftzs8KFFH23p/BA6D2k0QCM4R0sY1DEy9MIY9b3fwi+bg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" integrity="sha512-f28cvdA4Bq3dC9X9wNmSx21rjWI+5piIW/uoc2LuQ67asKxfQjUow2MkcCNcfJiaLrHcGbed1wzYe3dlY4w9gA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://use.fontawesome.com/bb4f9ef701.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -69,16 +71,16 @@
       <div class="mobile-nav none">
         <ul>
           <li>
-            <a href="">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="">Services</a>
+            <a href="#services">Services</a>
           </li>
           <li>
-            <a href="">Training</a>
+            <a href="#training">Training</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -383,9 +385,29 @@
     </div>
 
     <div id="training">
-      <div class="container">
-        <div class="d-flex justify-content-center">
-          <h1 class="section-header">TRAINING</h1>
+      <div class="d-flex justify-content-center">
+        <h1 class="section-header">TRAINING</h1>
+      </div>
+      <div class="owl-carousel training-mobile">
+        <div class="px-5"> 
+          <h3>Special Software Training</h3> 
+          <p>Learn on how to use one or more of the top bioinformatics software used in the pharmaceutical 
+            industry. </p>
+        </div>
+        <div class="px-50"> 
+          <h3>SPECIAL PIPELINE TRAINING (SPIT)</h3> 
+          <p>Learn from start to finish, the basics of any of our pipelines.. </p>
+        </div>
+      </div>
+      <div class="training-large row">
+        <div class="col-6">
+          <h3>Special Software Training</h3> 
+          <p>Learn on how to use one or more of the top bioinformatics software used in the pharmaceutical 
+            industry. </p>
+        </div>
+        <div class="col-6">
+          <h3>SPECIAL PIPELINE TRAINING (SPIT)</h3> 
+          <p>Learn from start to finish, the basics of any of our pipelines.. </p>
         </div>
       </div>
     </div>
@@ -398,11 +420,16 @@
         </div>
         <div class="col-4 services-col">
           <h3>Our Services</h3>
-          <p>Drug Development and Discovery</p>
-          <p>Database Management</p>
-          <p>Data and image analysis</p>
-          <p>Human and Microbial Genonomics</p>
-          <p>Bio-Informatic Training</p>
+          <p><i class="fa fa-check pe-2" aria-hidden="true"></i>
+            Drug Development and Discovery</p>
+          <p><i class="fa fa-check pe-2" aria-hidden="true"></i>
+            Database Management</p>
+          <p> <i class="fa fa-check pe-2" aria-hidden="true"></i>
+            Data and image analysis</p>
+          <p><i class="fa fa-check pe-2" aria-hidden="true"></i>
+            Human and Microbial Genonomics</p>
+          <p><i class="fa fa-check pe-2" aria-hidden="true"></i>
+            Bio-Informatic Training</p>
         </div>
         <div class="col-md-4 col-sm-6">
           <h3>Our social networks</h3>
@@ -424,12 +451,15 @@
       </div>
     </footer>
 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js" integrity="sha512-IUpSKpPKlXuPokiYONEZUG/H4c1rw4VmbGdnBKB18qm/9jbnxQ4Rv5Da9qEmB3hIa3k4DxRNoZfB6FTpERnuOQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
       AOS.init();
     </script>

@@ -1,4 +1,7 @@
 // document.documentElement.scrollHeight - window.innerHeight
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel();
+});
 
 const showUpButton = () => {
   if (
